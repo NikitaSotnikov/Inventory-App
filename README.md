@@ -22,5 +22,5 @@ The goal is to design and create the structure of a Inventory App which would di
  - Delete one or all of your products
  - Order more products with e-mail
 
-# Screenshot
+# Screenshots
 <img src="https://github.com/NikitaSotnikov/Inventory-App/blob/master/device-2017-10-21-013645.png?raw=true" width="250"> <img src="https://github.com/NikitaSotnikov/Inventory-App/blob/master/device-2017-10-21-013808.png?raw=true" width="250"> <img src="https://github.com/NikitaSotnikov/Inventory-App/blob/master/device-2017-10-21-013839.png?raw=true" width="250">
