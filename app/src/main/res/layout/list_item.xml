@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_margin">
+    <!-- descendantFocusability to block button from stealing focus from list item - Bhavesh Hirpara -->
+    <!-- http://stackoverflow.com/questions/2098558/listview-with-clickable-editable-widget -->
+
+    <ImageView
+        android:id="@+id/list_item_image"
+        android:layout_width="68dp"
+        android:layout_height="68dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:paddingLeft="16dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Product Name"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D"  />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_price_24dp"/>
+                <TextView
+                    android:id="@+id/list_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:text="10"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#AEB6BD"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_quantity_24dp"/>
+                <TextView
+                    android:id="@+id/list_item_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:text="100"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#AEB6BD"  />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:paddingLeft="16dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/list_item_sale_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/ic_sell_24dp"
+        android:background="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
